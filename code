@@ -1,0 +1,827 @@
+int led2Pin = 2;                                 // definiert LED an Pin                    Alte Weser          F.
+int led3Pin = 3;                                 // definiert LED an Pin                                        
+int led4Pin = 4;                                 // definiert LED an Pin                    Wangerooge          F.
+int led5Pin = 5;                                 // definiert LED an Pin                                        
+int led6Pin = 6;                                 // definiert LED an Pin                                        
+int led7Pin = 7;                                 // definiert LED an Pin                                        
+int led8Pin = 8;                                 // definiert LED an Pin                                        
+int led9Pin = 9;                                 // definiert LED an Pin                    Büsum               Iso.6s
+int led10Pin = 10;                               // definiert LED an Pin                    Tegeler Plate       Oc(3)12s
+int led11Pin = 11;                               // definiert LED an Pin                                        
+int led12Pin = 12;                               // definiert LED an Pin                                        
+int led13Pin = 13;                               // definiert LED an Pin                                        
+int led14Pin = 14;                               // definiert LED an Pin                                        
+int led15Pin = 15;                               // definiert LED an Pin                                        
+int led16Pin = 16;                               // definiert LED an Pin                                        
+int led17Pin = 17;                               // definiert LED an Pin                                        
+int led18Pin = 18;                               // definiert LED an Pin                                        
+int led19Pin = 19;                               // definiert LED an Pin                                        
+int led20Pin = 20;                               // definiert LED an Pin                                        
+int led21Pin = 21;                               // definiert LED an Pin                                        
+int led22Pin = 22;                               // definiert LED an Pin                                        
+int led23Pin = 23;                               // definiert LED an Pin                                        
+int led24Pin = 24;                               // definiert LED an Pin                                        
+int led25Pin = 25;                               // definiert LED an Pin                                        
+int led26Pin = 26;                               // definiert LED an Pin                                        
+int led27Pin = 27;                               // definiert LED an Pin                                        
+int led28Pin = 28;                               // definiert LED an Pin                                        
+int led29Pin = 29;                               // definiert LED an Pin                                        
+int led30Pin = 30;                               // definiert LED an Pin                                        
+int led31Pin = 31;                               // definiert LED an Pin                                        
+int led32Pin = 32;                               // definiert LED an Pin                                        
+int led33Pin = 33;                               // definiert LED an Pin                                        
+int led34Pin = 34;                               // definiert LED an Pin                                        
+int led35Pin = 35;                               // definiert LED an Pin                                        
+int led36Pin = 36;                               // definiert LED an Pin                                        
+int led37Pin = 37;                               // definiert LED an Pin                                        
+int led38Pin = 38;                               // definiert LED an Pin                                        
+int led39Pin = 39;                               // definiert LED an Pin                                        
+int led40Pin = 40;                               // definiert LED an Pin                                        
+int led41Pin = 41;                               // definiert LED an Pin                                        
+int led42Pin = 42;                               // definiert LED an Pin                                        
+int led43Pin = 43;                               // definiert LED an Pin                                        
+int led44Pin = 44;                               // definiert LED an Pin                                        
+int led45Pin = 45;                               // definiert LED an Pin                                        
+int led46Pin = 46;                               // definiert LED an Pin                                        
+int led47Pin = 47;                               // definiert LED an Pin                                        
+int led48Pin = 48;                               // definiert LED an Pin                                        
+int led49Pin = 49;                               // definiert LED an Pin                                        
+int led50Pin = 50;                               // definiert LED an Pin                                        
+int led51Pin = 51;                               // definiert LED an Pin                                        
+int led52Pin = 52;                               // definiert LED an Pin                                        
+int led53Pin = 53;                               // definiert LED an Pin                                        
+
+
+
+
+
+//int led2Timeout[] = {};                                                                       //  Phasendauer LED 2 - deaktiviert da Festfeuer
+int led3Timeout[] = {};                                                                         //  Phasendauer LED 3
+//int led4Timeout[] = {};                                                                       //  Phasendauer LED 4 - deaktiviert da Festfeuer
+int led5Timeout[] = {};                                                                         //  Phasendauer LED 5
+int led6Timeout[] = {};                                                                         //  Phasendauer LED 6
+int led7Timeout[] = {};                                                                         //  Phasendauer LED 7
+int led8Timeout[] = {};                                                                         //  Phasendauer LED 8
+int led9Timeout[] = {500,3000,500,2000};                                                        //  Phasendauer LED 9
+int led10Timeout[] = {90,77,90,77,90,77,90,77,90,77,90,77,90,9910};                             //  Phasendauer LED 10
+int led11Timeout[] = {};                                                                        //  Phasendauer LED 11
+int led12Timeout[] = {};                                                                        //  Phasendauer LED 12
+int led13Timeout[] = {};                                                                        //  Phasendauer LED 13
+int led14Timeout[] = {};                                                                        //  Phasendauer LED 14
+int led15Timeout[] = {};                                                                        //  Phasendauer LED 15
+int led16Timeout[] = {};                                                                        //  Phasendauer LED 16
+int led17Timeout[] = {};                                                                        //  Phasendauer LED 17
+int led18Timeout[] = {};                                                                        //  Phasendauer LED 18
+int led19Timeout[] = {};                                                                        //  Phasendauer LED 19
+int led20Timeout[] = {};                                                                        //  Phasendauer LED 20
+int led21Timeout[] = {};                                                                        //  Phasendauer LED 21
+int led22Timeout[] = {};                            //  Phasendauer LED 22
+int led23Timeout[] = {};                            //  Phasendauer LED 23
+int led24Timeout[] = {};                            //  Phasendauer LED 24
+int led25Timeout[] = {};                            //  Phasendauer LED 25
+int led26Timeout[] = {};                            //  Phasendauer LED 26
+int led27Timeout[] = {};                            //  Phasendauer LED 27
+int led28Timeout[] = {};                            //  Phasendauer LED 28
+int led29Timeout[] = {};                            //  Phasendauer LED 29
+int led30Timeout[] = {};                            //  Phasendauer LED 30
+int led31Timeout[] = {};                            //  Phasendauer LED 31
+int led32Timeout[] = {};                            //  Phasendauer LED 32
+int led33Timeout[] = {};                            //  Phasendauer LED 33
+int led34Timeout[] = {};                            //  Phasendauer LED 34
+int led35Timeout[] = {};                            //  Phasendauer LED 35
+int led36Timeout[] = {};                            //  Phasendauer LED 36
+int led37Timeout[] = {};                            //  Phasendauer LED 37
+int led38Timeout[] = {};                            //  Phasendauer LED 38
+int led39Timeout[] = {};                            //  Phasendauer LED 39
+int led40Timeout[] = {};                            //  Phasendauer LED 40
+int led41Timeout[] = {};                            //  Phasendauer LED 41
+int led42Timeout[] = {};                            //  Phasendauer LED 42
+int led43Timeout[] = {};                            //  Phasendauer LED 43
+int led44Timeout[] = {};                            //  Phasendauer LED 44
+int led45Timeout[] = {};                            //  Phasendauer LED 45
+int led46Timeout[] = {};                            //  Phasendauer LED 46
+int led47Timeout[] = {};                            //  Phasendauer LED 47
+int led48Timeout[] = {};                            //  Phasendauer LED 48
+int led49Timeout[] = {};                            //  Phasendauer LED 49
+int led50Timeout[] = {};                            //  Phasendauer LED 50
+int led51Timeout[] = {};                            //  Phasendauer LED 51
+int led52Timeout[] = {};                            //  Phasendauer LED 52
+int led53Timeout[] = {};                            //  Phasendauer LED 53
+
+
+
+
+
+//int led2Phases = 0;                              // speichert die Anzahl der Phasen - deaktiviert da Festfeuer
+int led3Phases = 0;                              // speichert die Anzahl der Phasen
+//int led4Phases = 0;                              // speichert die Anzahl der Phasen - deaktiviert da Festfeuer
+int led5Phases = 0;                              // speichert die Anzahl der Phasen
+int led6Phases = 0;                              // speichert die Anzahl der Phasen
+int led7Phases = 0;                              // speichert die Anzahl der Phasen
+int led8Phases = 0;                              // speichert die Anzahl der Phasen
+int led9Phases = 4;                              // speichert die Anzahl der Phasen
+int led10Phases = 14;                            // speichert die Anzahl der Phasen
+int led11Phases = 0;                             // speichert die Anzahl der Phasen
+int led12Phases = 0;                             // speichert die Anzahl der Phasen
+int led13Phases = 0;                             // speichert die Anzahl der Phasen
+int led14Phases = 0;                             // speichert die Anzahl der Phasen
+int led15Phases = 0;                             // speichert die Anzahl der Phasen
+int led16Phases = 0;                             // speichert die Anzahl der Phasen
+int led17Phases = 0;                             // speichert die Anzahl der Phasen
+int led18Phases = 0;                             // speichert die Anzahl der Phasen
+int led19Phases = 0;                             // speichert die Anzahl der Phasen
+int led20Phases = 0;                             // speichert die Anzahl der Phasen
+int led21Phases = 0;                             // speichert die Anzahl der Phasen
+int led22Phases = 0;                             // speichert die Anzahl der Phasen
+int led23Phases = 0;                             // speichert die Anzahl der Phasen
+int led24Phases = 0;                             // speichert die Anzahl der Phasen
+int led25Phases = 0;                             // speichert die Anzahl der Phasen
+int led26Phases = 0;                             // speichert die Anzahl der Phasen
+int led27Phases = 0;                             // speichert die Anzahl der Phasen
+int led28Phases = 0;                             // speichert die Anzahl der Phasen
+int led29Phases = 0;                             // speichert die Anzahl der Phasen
+int led30Phases = 0;                             // speichert die Anzahl der Phasen
+int led31Phases = 0;                             // speichert die Anzahl der Phasen
+int led32Phases = 0;                             // speichert die Anzahl der Phasen
+int led33Phases = 0;                             // speichert die Anzahl der Phasen
+int led34Phases = 0;                             // speichert die Anzahl der Phasen
+int led35Phases = 0;                             // speichert die Anzahl der Phasen
+int led36Phases = 0;                             // speichert die Anzahl der Phasen
+int led37Phases = 0;                             // speichert die Anzahl der Phasen
+int led38Phases = 0;                             // speichert die Anzahl der Phasen
+int led39Phases = 0;                             // speichert die Anzahl der Phasen
+int led40Phases = 0;                             // speichert die Anzahl der Phasen
+int led41Phases = 0;                             // speichert die Anzahl der Phasen
+int led42Phases = 0;                             // speichert die Anzahl der Phasen
+int led43Phases = 0;                             // speichert die Anzahl der Phasen
+int led44Phases = 0;                             // speichert die Anzahl der Phasen
+int led45Phases = 0;                             // speichert die Anzahl der Phasen
+int led46Phases = 0;                             // speichert die Anzahl der Phasen
+int led47Phases = 0;                             // speichert die Anzahl der Phasen
+int led48Phases = 0;                             // speichert die Anzahl der Phasen
+int led49Phases = 0;                             // speichert die Anzahl der Phasen
+int led50Phases = 0;                             // speichert die Anzahl der Phasen
+int led51Phases = 0;                             // speichert die Anzahl der Phasen
+int led52Phases = 0;                             // speichert die Anzahl der Phasen
+int led53Phases = 0;                             // speichert die Anzahl der Phasen
+
+
+
+
+
+//int led2Phase = 0;                                   // Aktuelle Phase der LED - deaktiviert da Festfeuer
+int led3Phase = 0;                                   // Aktuelle Phase der LED
+//int led4Phase = 0;                                   // Aktuelle Phase der LED - deaktiviert da Festfeuer
+int led5Phase = 0;                                   // Aktuelle Phase der LED
+int led6Phase = 0;                                   // Aktuelle Phase der LED
+int led7Phase = 0;                                   // Aktuelle Phase der LED
+int led8Phase = 0;                                   // Aktuelle Phase der LED
+int led9Phase = 0;                                   // Aktuelle Phase der LED
+int led10Phase = 0;                                  // Aktuelle Phase der LED
+int led11Phase = 0;                                  // Aktuelle Phase der LED
+int led12Phase = 0;                                  // Aktuelle Phase der LED
+int led13Phase = 0;                                  // Aktuelle Phase der LED
+int led14Phase = 0;                                  // Aktuelle Phase der LED
+int led15Phase = 0;                                  // Aktuelle Phase der LED
+int led16Phase = 0;                                  // Aktuelle Phase der LED
+int led17Phase = 0;                                  // Aktuelle Phase der LED
+int led18Phase = 0;                                  // Aktuelle Phase der LED
+int led19Phase = 0;                                  // Aktuelle Phase der LED
+int led20Phase = 0;                                  // Aktuelle Phase der LED
+int led21Phase = 0;                                  // Aktuelle Phase der LED
+int led22Phase = 0;                                  // Aktuelle Phase der LED
+int led23Phase = 0;                                  // Aktuelle Phase der LED
+int led24Phase = 0;                                  // Aktuelle Phase der LED
+int led25Phase = 0;                                  // Aktuelle Phase der LED
+int led26Phase = 0;                                  // Aktuelle Phase der LED
+int led27Phase = 0;                                  // Aktuelle Phase der LED
+int led28Phase = 0;                                  // Aktuelle Phase der LED
+int led29Phase = 0;                                  // Aktuelle Phase der LED
+int led30Phase = 0;                                  // Aktuelle Phase der LED
+int led31Phase = 0;                                  // Aktuelle Phase der LED
+int led32Phase = 0;                                  // Aktuelle Phase der LED
+int led33Phase = 0;                                  // Aktuelle Phase der LED
+int led34Phase = 0;                                  // Aktuelle Phase der LED
+int led35Phase = 0;                                  // Aktuelle Phase der LED
+int led36Phase = 0;                                  // Aktuelle Phase der LED
+int led37Phase = 0;                                  // Aktuelle Phase der LED
+int led38Phase = 0;                                  // Aktuelle Phase der LED
+int led39Phase = 0;                                  // Aktuelle Phase der LED
+int led40Phase = 0;                                  // Aktuelle Phase der LED
+int led41Phase = 0;                                  // Aktuelle Phase der LED
+int led42Phase = 0;                                  // Aktuelle Phase der LED
+int led43Phase = 0;                                  // Aktuelle Phase der LED
+int led44Phase = 0;                                  // Aktuelle Phase der LED
+int led45Phase = 0;                                  // Aktuelle Phase der LED
+int led46Phase = 0;                                  // Aktuelle Phase der LED
+int led47Phase = 0;                                  // Aktuelle Phase der LED
+int led48Phase = 0;                                  // Aktuelle Phase der LED
+int led49Phase = 0;                                  // Aktuelle Phase der LED
+int led50Phase = 0;                                  // Aktuelle Phase der LED
+int led51Phase = 0;                                  // Aktuelle Phase der LED
+int led52Phase = 0;                                  // Aktuelle Phase der LED
+int led53Phase = 0;                                  // Aktuelle Phase der LED
+
+
+
+
+
+//int led2State = 1;                                   // LED Zustand 1 = an, -1 = aus - deaktiviert da Festfeuer
+int led3State = 0;                                   // LED Zustand 1 = an, -1 = aus
+//int led4State = 1;                                   // LED Zustand 1 = an, -1 = aus - deaktiviert da Festfeuer
+int led5State = 0;                                   // LED Zustand 1 = an, -1 = aus
+int led6State = 0;                                   // LED Zustand 1 = an, -1 = aus
+int led7State = -1;                                   // LED Zustand 1 = an, -1 = aus
+int led8State = -1;                                   // LED Zustand 1 = an, -1 = aus
+int led9State = 0;                                   // LED Zustand 1 = an, -1 = aus
+int led10State = 0;                                  // LED Zustand 1 = an, -1 = aus
+int led11State = 0;                                  // LED Zustand 1 = an, -1 = aus
+int led12State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led13State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led14State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led15State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led16State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led17State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led18State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led19State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led20State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led21State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led22State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led23State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led24State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led25State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led26State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led27State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led28State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led29State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led30State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led31State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led32State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led33State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led34State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led35State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led36State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led37State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led38State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led39State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led40State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led41State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led42State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led43State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led44State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led45State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led46State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led47State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led48State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led49State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led50State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led51State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led52State = -1;                                  // LED Zustand 1 = an, -1 = aus
+int led53State = -1;                                  // LED Zustand 1 = an, -1 = aus
+
+
+
+
+
+//long led2Timer = 0;                                  // LED timer - deaktiviert da Festfeuer
+long led3Timer = 0;                                  // LED timer
+//long led4Timer = 0;                                  // LED timer - deaktiviert da Festfeuer
+long led5Timer = 0;                                  // LED timer
+long led6Timer = 0;                                  // LED timer
+long led7Timer = 0;                                  // LED timer
+long led8Timer = 0;                                  // LED timer
+long led9Timer = 0;                                  // LED timer
+long led10Timer = 0;                                 // LED timer
+long led11Timer = 0;                                 // LED timer
+long led12Timer = 0;                                 // LED timer
+long led13Timer = 0;                                 // LED timer
+long led14Timer = 0;                                 // LED timer
+long led15Timer = 0;                                 // LED timer
+long led16Timer = 0;                                 // LED timer
+long led17Timer = 0;                                 // LED timer
+long led18Timer = 0;                                 // LED timer
+long led19Timer = 0;                                 // LED timer
+long led20Timer = 0;                                 // LED timer
+long led21Timer = 0;                                 // LED timer
+long led22Timer = 0;                                 // LED timer
+long led23Timer = 0;                                 // LED timer
+long led24Timer = 0;                                 // LED timer
+long led25Timer = 0;                                 // LED timer
+long led26Timer = 0;                                 // LED timer
+long led27Timer = 0;                                 // LED timer
+long led28Timer = 0;                                 // LED timer
+long led29Timer = 0;                                 // LED timer
+long led30Timer = 0;                                 // LED timer
+long led31Timer = 0;                                 // LED timer
+long led32Timer = 0;                                 // LED timer
+long led33Timer = 0;                                 // LED timer
+long led34Timer = 0;                                 // LED timer
+long led35Timer = 0;                                 // LED timer
+long led36Timer = 0;                                 // LED timer
+long led37Timer = 0;                                 // LED timer
+long led38Timer = 0;                                 // LED timer
+long led39Timer = 0;                                 // LED timer
+long led40Timer = 0;                                 // LED timer
+long led41Timer = 0;                                 // LED timer
+long led42Timer = 0;                                 // LED timer
+long led43Timer = 0;                                 // LED timer
+long led44Timer = 0;                                 // LED timer
+long led45Timer = 0;                                 // LED timer
+long led46Timer = 0;                                 // LED timer
+long led47Timer = 0;                                 // LED timer
+long led48Timer = 0;                                 // LED timer
+long led49Timer = 0;                                 // LED timer
+long led50Timer = 0;                                 // LED timer
+long led51Timer = 0;                                 // LED timer
+long led52Timer = 0;                                 // LED timer
+long led53Timer = 0;                                 // LED timer
+
+
+
+
+
+void setup() {
+  Serial.begin(115200);
+  pinMode(led2Pin, OUTPUT);                                   // Pin wird als Output deklariert
+  pinMode(led4Pin, OUTPUT);                                   // Pin wird als Output deklariert
+  pinMode(led7Pin, OUTPUT);                                   // Pin wird als Output deklariert
+  pinMode(led8Pin, OUTPUT);                                   // Pin wird als Output deklariert
+  pinMode(led12Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led13Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led14Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led15Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led16Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led17Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led18Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led19Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led20Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led21Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led22Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led23Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led24Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led25Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led26Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led27Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led28Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led29Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led30Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led31Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led32Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led33Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led34Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led35Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led36Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led37Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led38Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led39Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led40Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led41Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led42Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led43Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led44Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led45Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led46Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led47Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led48Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led49Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led50Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led51Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led52Pin, OUTPUT);                                  // Pin wird als Output deklariert
+  pinMode(led53Pin, OUTPUT);                                  // Pin wird als Output deklariert
+
+
+
+
+
+
+  //led2Timer = millis();                                   // Start des Timers - deaktiviert da Festfeuer
+  //led4Timer = millis();                                   // Start des Timers - deaktiviert da Festfeuer
+  led7Timer = millis();                                   // Start des Timers
+  led8Timer = millis();                                   // Start des Timers
+  led12Timer = millis();                                  // Start des Timers
+  led13Timer = millis();                                  // Start des Timers
+  led14Timer = millis();                                  // Start des Timers
+  led15Timer = millis();                                  // Start des Timers
+  led16Timer = millis();                                  // Start des Timers
+  led17Timer = millis();                                  // Start des Timers
+  led18Timer = millis();                                  // Start des Timers
+  led19Timer = millis();                                  // Start des Timers
+  led20Timer = millis();                                  // Start des Timers
+  led21Timer = millis();                                  // Start des Timers
+  led22Timer = millis();                                  // Start des Timers
+  led23Timer = millis();                                  // Start des Timers
+  led24Timer = millis();                                  // Start des Timers
+  led25Timer = millis();                                  // Start des Timers
+  led26Timer = millis();                                  // Start des Timers
+  led27Timer = millis();                                  // Start des Timers
+  led28Timer = millis();                                  // Start des Timers
+  led29Timer = millis();                                  // Start des Timers
+  led30Timer = millis();                                  // Start des Timers
+  led31Timer = millis();                                  // Start des Timers
+  led32Timer = millis();                                  // Start des Timers
+  led33Timer = millis();                                  // Start des Timers
+  led34Timer = millis();                                  // Start des Timers
+  led35Timer = millis();                                  // Start des Timers
+  led36Timer = millis();                                  // Start des Timers
+  led37Timer = millis();                                  // Start des Timers
+  led38Timer = millis();                                  // Start des Timers
+  led39Timer = millis();                                  // Start des Timers
+  led40Timer = millis();                                  // Start des Timers
+  led41Timer = millis();                                  // Start des Timers
+  led42Timer = millis();                                  // Start des Timers
+  led43Timer = millis();                                  // Start des Timers
+  led44Timer = millis();                                  // Start des Timers
+  led45Timer = millis();                                  // Start des Timers
+  led46Timer = millis();                                  // Start des Timers
+  led47Timer = millis();                                  // Start des Timers
+  led48Timer = millis();                                  // Start des Timers
+  led49Timer = millis();                                  // Start des Timers
+  led50Timer = millis();                                  // Start des Timers
+  led51Timer = millis();                                  // Start des Timers
+  led52Timer = millis();                                  // Start des Timers
+  led53Timer = millis();                                  // Start des Timers
+}
+
+
+
+
+  
+void loop() {
+
+
+
+
+
+  // LED 2 Handling             Alte Weser      F.
+  digitalWrite(led2Pin, HIGH);
+  
+
+
+
+
+  // LED 3 Handling
+  
+
+
+
+
+  // LED 4 Handling             Wangerooge      F.
+  digitalWrite(led4Pin, HIGH);
+
+
+
+
+  // LED 5 Handling
+  
+
+
+
+
+  // LED 6 Handling
+
+
+
+
+  // LED 7 Handling
+
+
+
+
+
+  // LED 8 Handling
+  
+
+
+
+
+
+  // LED 9 Handling             Büsum      Iso.6s
+  if (millis()>led9Timer+led9Timeout[led9Phase]){     // prüft den Timer
+      led9Phase++;                                    // erhöht die Leuchtphase um 1
+      if (led9Phase>led9Phases-1){                    // falls Leuchtphasenmaximum überschritten
+        led9Phase = 0;                                // Leuchtphase zurücksetzen
+      }
+      led9Timer = millis();                           // Timer resetten
+  }
+
+  if (led9Phase==0) {                                                           // wenn led9State == 0, dann einfaden
+    analogWrite(led9Pin, map(millis()-led9Timer,0,led9Timeout[0],0,60));
+  } else if (led9Phase==1) {                                                    // wenn led9State == 1, dann an
+    analogWrite(led9Pin, 60);
+  } else if (led9Phase==2){                                                     // wenn led9State == 2, dann ausfaden
+    analogWrite(led9Pin, 60-map(millis()-led9Timer,0,led9Timeout[0],0,60));  
+  } else if (led9Phase==3) {                                                    // wenn led9State == 3, dann aus
+    analogWrite(led9Pin, 0);
+  }
+
+
+
+
+  // LED 10 Handling
+  if (millis()>led10Timer+led10Timeout[led10Phase]){     // prüft den Timer
+      led10Phase++;                                      // erhöht die Leuchtphase um 1
+      if (led10Phase>led10Phases-1){                     // falls Leuchtphasenmaximum überschritten
+        led10Phase = 0;                                  // Leuchtphase zurücksetzen
+      }
+      led10Timer = millis();                             // Timer resetten
+  }
+
+  if (led10Phase==0) {                                                           // wenn led10State == 0, dann einfaden
+    analogWrite(led10Pin, map(millis()-led10Timer,0,led10Timeout[0],0,60));
+  } else if (led10Phase==1) {                                                    // wenn led10State == 1, dann an
+    analogWrite(led10Pin, 60);
+  } else if (led10Phase==2){                                                     // wenn led10State == 2, dann ausfaden
+    analogWrite(led10Pin, 60-map(millis()-led10Timer,0,led10Timeout[0],0,60));  
+  } else if (led10Phase==3) {                                                    // wenn led10State == 3, dann aus
+    analogWrite(led10Pin, 0);
+  } else if (led10Phase==4) {                                                    // wenn led10State == 4, dann einfaden
+    analogWrite(led10Pin, map(millis()-led10Timer,0,led10Timeout[0],0,60));
+  } else if (led10Phase==5) {                                                    // wenn led10State == 5, dann an
+    analogWrite(led10Pin, 60);
+  } else if (led10Phase==6){                                                     // wenn led10State == 6, dann ausfaden
+    analogWrite(led10Pin, 60-map(millis()-led10Timer,0,led10Timeout[0],0,60));  
+  } else if (led10Phase==7) {                                                    // wenn led10State == 7, dann aus
+    analogWrite(led10Pin, 0);
+  } else if (led10Phase==8) {                                                    // wenn led10State == 8, dann einfaden
+    analogWrite(led10Pin, map(millis()-led10Timer,0,led10Timeout[0],0,60));
+  } else if (led10Phase==9) {                                                    // wenn led10State == 9, dann an
+    analogWrite(led10Pin, 60);
+  } else if (led10Phase==10){                                                     // wenn led10State == 10, dann ausfaden
+    analogWrite(led10Pin, 60-map(millis()-led10Timer,0,led10Timeout[0],0,60));  
+  } else if (led10Phase==11) {                                                    // wenn led10State == 11, dann aus
+    analogWrite(led10Pin, 0);
+  } else if (led10Phase==12) {                                                    // wenn led10State == 13, dann einfaden
+    analogWrite(led10Pin, map(millis()-led10Timer,0,led10Timeout[0],0,60));
+  } else if (led10Phase==13) {                                                    // wenn led10State == 14, dann an
+    analogWrite(led10Pin, 60);
+  }
+
+
+
+
+
+  // LED 11 Handling
+
+  
+
+
+
+  // LED 12 Handling
+
+
+
+
+
+  // LED 13 Handling
+  
+
+
+
+
+  // LED 14 Handling
+
+
+
+
+
+  // LED 15 Handling
+  
+
+
+
+
+  // LED 16 Handling
+
+
+
+
+
+  // LED 17 Handling
+
+
+
+
+
+  // LED 18 Handling
+
+
+
+
+
+  // LED 19 Handling
+
+
+
+
+
+  // LED 20 Handling
+  
+
+
+
+
+  // LED 21 Handling
+
+  
+
+
+
+  // LED 22 Handling
+
+
+
+
+
+  // LED 23 Handling
+  
+
+
+
+
+  // LED 24 Handling
+
+
+
+
+
+  // LED 25 Handling
+  
+
+
+
+
+  // LED 26 Handling
+
+
+
+
+
+  // LED 27 Handling
+
+
+
+
+
+  // LED 28 Handling
+
+
+
+
+
+  // LED 29 Handling
+  
+
+
+
+
+  // LED 30 Handling
+  
+
+
+
+
+  // LED 31 Handling
+
+  
+
+
+
+  // LED 32 Handling
+
+
+
+
+
+  // LED 33 Handling
+  
+
+
+
+
+  // LED 34 Handling
+
+
+
+
+
+  // LED 35 Handling
+  
+
+
+
+
+  // LED 36 Handling
+
+
+
+
+
+  // LED 37 Handling
+
+
+
+
+
+  // LED 38 Handling
+
+
+
+
+
+  // LED 39 Handling
+  
+
+
+
+
+  // LED 40 Handling
+  
+
+
+
+
+  // LED 41 Handling
+
+  
+
+
+
+  // LED 42 Handling
+
+
+
+
+
+  // LED 43 Handling
+  
+
+
+
+
+  // LED 44 Handling
+
+
+
+
+
+  // LED 45 Handling
+  
+
+
+
+
+  // LED 46 Handling
+
+
+
+
+
+  // LED 47 Handling
+
+
+
+
+
+  // LED 48 Handling
+
+
+
+
+
+  // LED 49 Handling
+
+  
+
+
+
+  // LED 50 Handling
+
+
+
+
+
+  // LED 51 Handling
+
+
+
+
+
+  // LED 52 Handling
+
+
+
+
+
+  // LED 53 Handling
+
+
+
+  
+
+
+
+
+
+
+  delay(20);
+}
